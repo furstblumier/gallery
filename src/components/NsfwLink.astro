@@ -1,0 +1,14 @@
+<script>
+    const query = "nsfw-link"
+    const nsfwLink = document.getElementById(query);
+    if (nsfwLink != null) {
+        nsfwLink.addEventListener("click", nsfwLinkClick, false);
+
+        function nsfwLinkClick(event) {
+            let answer = confirm("If you are over 18 you can click 'OK'.");
+            if (!answer) {
+                event.preventDefault();
+            }
+        }
+    }
+</script>

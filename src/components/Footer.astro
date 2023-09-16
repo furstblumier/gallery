@@ -1,0 +1,74 @@
+---
+const { title, description } = Astro.props
+---
+
+<footer id="footer" class="panel">
+  <div class="inner split">
+    <div>
+      <section>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </section>
+      <section>
+        <h2>Follow me on ...</h2>
+        <ul class="icons">
+          <li>
+            <a href="https://twitter.com/furstblumier" class="icon brands fa-twitter" aria-label="Social">
+              <span class="label">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://itaku.ee/profile/furstblumier" class="icon solid fa-crow" aria-label="Social">
+              <span class="label">Itaku</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://inkbunny.net/furstblumier" class="icon solid fa-paintbrush" aria-label="Social">
+              <span class="label">InkBunny</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.furaffinity.net/user/reyatlanti" class="icon solid fa-dumpster-fire" aria-label="Social">
+              <span class="label">FurAffinity</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/rexatlanti" class="icon brands fa-github" aria-label="Social">
+              <span class="label">GitHub</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p class="copyright">
+        &copy; Fürst. Design: <a href="http://html5up.net">HTML5 UP</a>.<br />
+         Images: Made by their respective artists. Check my socials for links!
+      </p>
+    </div>
+    <div>
+      <section>
+        <h2>Get in touch</h2>
+        <form method="post" action="#">
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="field half">
+              <input type="text" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="field">
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                placeholder="Message"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send" class="primary" /></li>
+            <li><input type="reset" value="Reset" /></li>
+          </ul>
+        </form>
+      </section>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,31 @@
+---
+import BaseHead from './BaseHead.astro'
+import Header from './Header.astro'
+import Footer from './Footer.astro'
+import Gallery from './Gallery.astro'
+import ExternalScripts from './ExternalScripts.astro'
+import NsfwLink from "./NsfwLink.astro";
+
+let title = 'Fürst\'s Gallery'
+let description =
+  'Welcome to my little art gallery, enjoy your stay :3'
+const {nsfw} = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+  <BaseHead
+    title={title}
+    description={description}
+    author={'Fürst Blumier'}
+    og={'og-image.jpg'}
+  />
+
+  <body class="is-preload">
+    <Header title={title} />
+    <Footer title={title} description={description} />
+    <Gallery nsfw={nsfw}/>
+    <ExternalScripts />
+    <NsfwLink />
+  </body>
+</html>

@@ -1,0 +1,76 @@
+---
+import { Image } from 'astro:assets'
+// import { glob } from 'glob'
+import imageData from './images.json'
+
+// async function ImageFetcher(pattern: string) {
+//   const files = glob.sync(pattern, { posix: true })
+//   const imagePromises = files.map(async (file) => {
+//     const src = file.replace('public', '')
+//     return { src }
+//   })
+
+//   const imageFiles = await Promise.all(imagePromises)
+
+//   imageFiles.sort((a, b) => a.src.localeCompare(b.src))
+
+//   return imageFiles
+// }
+
+const { nsfw } = Astro.props
+
+console.log(nsfw);
+let filteredImages
+if (nsfw) {
+  filteredImages = imageData.images.filter(image => !image.sfw)
+} else {
+  filteredImages = imageData.images.filter(image => image.sfw)
+}
+
+console.log(filteredImages);
+
+// if (Astro.props.nsfw) {
+//   imageFiles = await ImageFetcher('public/images/nsfw/*.{jpg,,jpeg,png,webp}')
+// } else {
+//   imageFiles = await ImageFetcher('public/images/sfw/*.{jpg,,jpeg,png,webp}')
+// }
+
+---
+<div id="main">
+  { 
+    filteredImages.map((img) => (
+      <article class="thumb">
+          <a class="image" href={img.path}>
+            <Image
+              src={img.path}
+              width="1200"
+              height="750"
+              alt={img.alt}
+            />
+          </a>
+          <h2>{img.title}</h2>
+          <p>{img.artist}</p>
+        </article>
+    ))
+  }
+</div>
+
+
+<!-- <div id="main">
+  {
+    imageFiles.map((img) => (
+      <article class="thumb">
+        <a class="image" href={img.src}>
+          <Image
+            src={img.src}
+            width="1200"
+            height="750"
+            alt="Astro Multiverse"
+          />
+        </a>
+        <h2>{title}</h2>
+        <p>{description}</p>
+      </article>
+    ))
+  }
+</div> -->
