@@ -1,7 +1,8 @@
 ---
-import { Image } from 'astro:assets'
 // import { glob } from 'glob'
+import BaseImage from './BaseImage.astro';
 import imageData from './images.json'
+import test from '../images/Pokecuddles.png'
 
 // async function ImageFetcher(pattern: string) {
 //   const files = glob.sync(pattern, { posix: true })
@@ -16,15 +17,35 @@ import imageData from './images.json'
 
 //   return imageFiles
 // }
-
+const localImages = await Astro.glob('../images/*');
 const { nsfw } = Astro.props
 
-// console.log(nsfw);
+// console.log(imageFiles);
+// console.log(example)
+const imagePromises = localImages.map(async (file) => {
+  const src = file.default
+  return { src }
+})
+
+const imageSrc = await Promise.all(imagePromises)
+const correctSrcPromise = imageData.images.map(async (pics) => {
+  for (let sources of imageSrc) {
+    if (sources.src.src.includes(pics.src)) {
+      const image = Object.assign(pics,sources)
+      return image
+    }
+  }
+  return pics
+})
+
+const correctSrc = await Promise.all(correctSrcPromise)
+console.log(test)
+
 let filteredImages
 if (nsfw) {
-  filteredImages = imageData.images.filter(image => !image.sfw)
+  filteredImages = correctSrc.filter(image => !image.sfw)
 } else {
-  filteredImages = imageData.images.filter(image => image.sfw)
+  filteredImages = correctSrc.filter(image => image.sfw)
 }
 
 // console.log(filteredImages);
@@ -39,18 +60,7 @@ if (nsfw) {
 <div id="main">
   { 
     filteredImages.map((img) => (
-      <article class="thumb">
-          <a class="image" href={img.path}>
-            <Image
-              src={img.path}
-              width="1200"
-              height="750"
-              alt={img.alt}
-            />
-          </a>
-          <h2>{img.title}</h2>
-          <p>by {img.artist}</p>
-        </article>
+      <BaseImage img={img} />
     ))
   }
 </div>

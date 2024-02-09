@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets'
+
+const { img } = Astro.props
+---
+<article class="thumb">
+    <a class="image" href={img.src}>
+    <Image
+        src={img.src}
+        width="1200"
+        height="750"
+        alt={img.alt}
+    />
+    </a>
+    <h2>{img.title}</h2>
+    <p>by {img.artist}</p>
+</article>
