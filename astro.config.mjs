@@ -1,9 +1,16 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig } from 'astro/config';
+import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
+
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://furst.blue',
   image: {
-    remotePatterns: [{ protocol: "https" }],
-  }
-})
+    remotePatterns: [{
+      protocol: "https"
+    }]
+  },
+  integrations: [tailwind(), react(), icon()]
+});

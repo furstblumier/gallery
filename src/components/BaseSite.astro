@@ -1,4 +1,7 @@
 ---
+import "@fontsource-variable/inter";
+import "../styles/base.css";
+
 import BaseHead from './BaseHead.astro'
 import Header from './Header.astro'
 import Footer from './Footer.astro'
@@ -21,11 +24,11 @@ const {nsfw} = Astro.props
     og={'og-image.jpg'}
   />
 
-  <body class="is-preload">
+  <body class="bg-[#242629] text-dark-gray-300 font-normal">
     <Header title={title} />
     <Footer title={title} description={description} />
     <Gallery nsfw={nsfw}/>
-    <ExternalScripts />
     <NsfwLink />
+    <ExternalScripts/>
   </body>
 </html>

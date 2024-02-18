@@ -1,25 +1,25 @@
 ---
+import About from "./About.astro"
 const { title } = Astro.props
 ---
 
-<div id="wrapper">
-  <header id="header">
-    <h1>{title}</h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="/"> SFW</a>
-        </li>
-        <li>
-          <a id="nsfw-link" href="/nsfw"> NSFW</a>
-        </li>
-        <li>
-          <a id="blog-link" href="https://blog.furst.blue"> Blog</a>
-        </li>
-        <li>
-          <a href="#footer" class="icon solid fa-info-circle"> About</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-</div>
+<header class="bg-[#1F2224] border-t border-gray-900 flex z-10 h-14 w-full fixed inset-x-0 bottom-0 justify-between">
+  <h1 class="flex items-center justify-center h-full px-3 md:px-6">{title}</h1>
+  <nav>
+    <ul class="flex items-center justify-center h-full object-contain">
+      <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629]">
+        <a href="/"> SFW</a>
+      </li>
+      <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629]">
+        <a href="/nsfw"> NSFW</a>
+      </li>
+      <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629]">
+        <a href="https://blog.furst.blue"> Blog</a>
+      </li>
+      <li class="flex items-center justify-center h-full px-4 md:pr-6 hover:bg-[#242629]">
+        <p>About</p>
+        <!-- <About /> -->
+      </li>
+    </ul>
+  </nav>
+</header>

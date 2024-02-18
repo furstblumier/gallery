@@ -1,5 +1,5 @@
 ---
-import '@/styles/main.css'
+import '@/styles/base.css'
 
 interface Props {
   title?: string | undefined
@@ -38,6 +38,7 @@ const { title, description, author, og } = Astro.props
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={new URL(og, Astro.url)} />
   <meta name="twitter:card" content="summary_large_image" />
+
   <!-- analytics stuff -->
   <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="45c20637-3d41-4761-b469-b21c86a80f43"></script>
 </head>

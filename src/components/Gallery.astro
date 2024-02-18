@@ -26,14 +26,13 @@ if (nsfw) {
 }
 
 ---
-<div id="main">
+<div  class="grid grid-cols-3 content-evenly pb-14">
   { 
     filteredImages.map((img) => (
       <BaseImage img={img} />
     ))
   }
 </div>
-
 
 <!-- <div id="main">
   {

@@ -3,15 +3,32 @@ import { Image } from 'astro:assets'
 
 const { img } = Astro.props
 ---
-<article class="thumb">
-    <a class="image" href={img.src}>
+<!-- This part styles the thumbnail images -->
+<div class="object-contain h-72 transition-opacity cursor-pointer hover:opacity-90" data-dialog-target={img.title}>
+    <!-- <a class="object-contain h-64" href={img.src}> -->
     <Image
         src={img.src}
         width="1200"
         height="750"
         alt={img.alt}
+        class="object-cover object-center w-full h-72 max-w-full"
     />
-    </a>
+    <!-- </a> -->
     <h2>{img.title}</h2>
     <p>by {img.artist}</p>
-</article>
+</div>
+<!-- define the backdrop -->
+<div data-dialog-backdrop={img.title} data-dialog-backdrop-close="true"
+    class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+    <!-- define the actual image field -->
+    <div 
+        class="flex flex-col max-w-[75%] max-h-[90vh] justify-center items-center"
+        role="dialog" data-dialog={img.title} data-dialog-close="true">
+        <!-- we use <img> here since we want the not .webp version -->
+        <img 
+            alt={img.alt}
+            src={img.src}
+            class="h-full object-scale-down object-center shadow-2xl"
+            />
+    </div>
+</div>
