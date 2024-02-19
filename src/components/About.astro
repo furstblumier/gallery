@@ -1,60 +1,74 @@
 ---
+import { Icon } from 'astro-icon/components'
 const { title, description } = Astro.props
 ---
 
-  <div class="inner split">
-    <div>
-      <section>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </section>
-      <section>
-        <h2>Follow me on ...</h2>
-        <ul class="icons">
-          <li>
-            <a href="https://twitter.com/furstblumier" class="icon brands fa-twitter" aria-label="Social">
-              <span class="label">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/furstblumier" class="icon brands fa-telegram" aria-label="Social">
-              <span class="label">Telegram</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://itaku.ee/profile/furstblumier" class="icon solid fa-crow" aria-label="Social">
-              <span class="label">Itaku</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://inkbunny.net/furstblumier" class="icon solid fa-paintbrush" aria-label="Social">
-              <span class="label">InkBunny</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/rexatlanti" class="icon brands fa-github" aria-label="Social">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <p class="copyright">
-        &copy; Fürst. Design: <a href="http://html5up.net">HTML5 UP</a>.<br />
-         Images: Made by their respective artists. Check my socials for links!
-      </p>
-    </div>
-    <div>
-      <section>
-        <h2>About me</h2>
-        <p>
-          I'm known by the name of my pokesona, Fürst. I've been a furry for more than 15 years now, but I don't interact too much with others, so I am probably fairly unknown. 
+<!-- define the backdrop -->
+<div data-dialog-backdrop="about" data-dialog-backdrop-close="true"
+  class="pointer-events-none fixed inset-0 z-10 grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+  <!-- This defines the modal popup thing -->
+  <div role="dialog" data-dialog="about" data-dialog-close="true"
+    class="block py-16 px-16 pb-8 w-full h-[55%] overflow-y-auto absolute bottom-14 bg-[#242629] bg-opacity-95">
+    <div class="flex m-auto max-w-full w-[75rem]">
+      <!-- split in two, left section -->
+      <div class="w-1/2">
+        <section class="block">
+          <h2 class="text-xl mb-4 uppercase">{title}</h2>
+          <p class="text-sm text-dark-gray-500 mb-8">{description}</p>
+        </section>
+        <section>
+          <h2 class="text-xl uppercase pb-4">Follow me on ...</h2>
+          <ul class="flex justify-evenly mb-8 text-dark-gray-500">
+            <li>
+              <a href="https://twitter.com/furstblumier" class="">
+                <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="mdi:twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/furstblumier" class="icon brands fa-telegram">
+                <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="ei:sc-telegram" />
+              </a>
+            </li>
+            <li>
+              <a href="https://itaku.ee/profile/furstblumier" class="icon solid fa-crow">
+                <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="itaku" />
+              </a>
+            </li>
+            <li>
+              <a href="https://inkbunny.net/furstblumier" class="icon solid fa-paintbrush">
+                <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="inkbunny" />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/rexatlanti" class="icon brands fa-github">
+                <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="mdi:github" />
+              </a>
+            </li>
+            <!-- empty list to space a bit better -->
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
+        <p class="text-dark-gray-500 text-xs">
+          &copy; Fürst. Made with Astro and Tailwind.<br />
+            Images: Made by their respective artists. Check my socials for links!
         </p>
-        <p>
-          Irl I work in IT (like 90% of the fandom) as a systems engineer, currently specializing in k8s clusters. I'm not a dev but I made this website myself for example.
-        </p>
-        <p>
-          If you wanna get in touch shoot me a message on Discord (furstblumier) or <a href="https://t.me/furstblumier" target="_blank">Telegram</a>! :3 
-        </p>
-      </section>
+      </div>
+      <!-- split in two, right section -->
+      <div class="block">
+        <section>
+          <h2 class="uppercase text-xl mb-4">About me</h2>
+          <p class="text-dark-gray-500 text-sm mb-8">
+            I'm known by the name of my pokesona, Fürst. I've been a furry for more than 15 years now and this website is a place to show off most of the art I commissioned. 
+          </p>
+          <p class="text-dark-gray-500 text-sm mb-8">
+            At my day job I work in IT (like 90% of the fandom) as a systems engineer, currently specializing in Kubernetes clusters. I'm not a dev, but I made this website myself for example.
+          </p>
+          <p class="text-dark-gray-500 text-sm mb-8">
+            If you wanna get in touch, shoot me a message on Discord (furstblumier) or <a href="https://t.me/furstblumier" target="_blank">Telegram</a>! :3 
+          </p>
+        </section>
+      </div>
     </div>
   </div>
+</div>

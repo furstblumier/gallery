@@ -1,62 +1,29 @@
 ---
+import About from "./About.astro"
 const { title, description } = Astro.props
 ---
 
-<footer id="footer" class="panel">
-  <div class="inner split">
-    <div>
-      <section>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </section>
-      <section>
-        <h2>Follow me on ...</h2>
-        <ul class="icons">
-          <li>
-            <a href="https://twitter.com/furstblumier" class="icon brands fa-twitter" aria-label="Social">
-              <span class="label">Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/furstblumier" class="icon brands fa-telegram" aria-label="Social">
-              <span class="label">Telegram</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://itaku.ee/profile/furstblumier" class="icon solid fa-crow" aria-label="Social">
-              <span class="label">Itaku</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://inkbunny.net/furstblumier" class="icon solid fa-paintbrush" aria-label="Social">
-              <span class="label">InkBunny</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/rexatlanti" class="icon brands fa-github" aria-label="Social">
-              <span class="label">GitHub</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <p class="copyright">
-        &copy; Fürst. Design: <a href="http://html5up.net">HTML5 UP</a>.<br />
-         Images: Made by their respective artists. Check my socials for links!
-      </p>
-    </div>
-    <div>
-      <section>
-        <h2>About me</h2>
-        <p>
-          I'm known by the name of my pokesona, Fürst. I've been a furry for more than 15 years now, but I don't interact too much with others, so I am probably fairly unknown. 
-        </p>
-        <p>
-          Irl I work in IT (like 90% of the fandom) as a systems engineer, currently specializing in k8s clusters. I'm not a dev but I made this website myself for example.
-        </p>
-        <p>
-          If you wanna get in touch shoot me a message on Discord (furstblumier) or <a href="https://t.me/furstblumier" target="_blank">Telegram</a>! :3 
-        </p>
-      </section>
-    </div>
+<footer>
+  <div class="bg-[#1F2224] border-t border-gray-900 flex z-20 h-14 w-full fixed inset-x-0 bottom-0 justify-between">
+    <h1 class="flex items-center text-dark-gray-500 uppercase justify-center h-full px-3 md:px-6 z-20">
+      {title}
+    </h1>
+    <nav class="z-20">
+      <ul class="flex items-center capitalize justify-center h-full object-contain z-20">
+        <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629] hover:scale-110 z-20">
+          <a href="/"> SFW</a>
+        </li>
+        <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629] hover:scale-110 z-20">
+          <a href="/nsfw"> NSFW</a>
+        </li>
+        <li class="flex items-center justify-center h-full px-4 hover:bg-[#242629] hover:scale-110 z-20">
+          <a href="https://blog.furst.blue"> Blog</a>
+        </li>
+        <li class="flex items-center justify-center h-full px-4 md:pr-6 hover:bg-[#242629] hover:scale-110 z-20 cursor-pointer" data-dialog-target="about">
+          <p>About</p>
+        </li>
+      </ul>
+    </nav>
   </div>
+  <About title={title} description={description} />
 </footer>

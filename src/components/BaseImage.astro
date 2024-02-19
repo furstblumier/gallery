@@ -3,32 +3,38 @@ import { Image } from 'astro:assets'
 
 const { img } = Astro.props
 ---
+
 <!-- This part styles the thumbnail images -->
-<div class="object-contain h-72 transition-opacity cursor-pointer hover:opacity-90" data-dialog-target={img.title}>
-    <!-- <a class="object-contain h-64" href={img.src}> -->
-    <Image
-        src={img.src}
-        width="1200"
-        height="750"
-        alt={img.alt}
-        class="object-cover object-center w-full h-72 max-w-full"
-    />
-    <!-- </a> -->
-    <h2>{img.title}</h2>
-    <p>by {img.artist}</p>
-</div>
+<figure class="object-contain h-72 relative transition-opacity ease-in cursor-pointer hover:-translate-y-1 hover:-translate-x-1 hover:shadow-2xl hover:scale-110 duration-300 hover:z-10" data-dialog-target={img.title}>
+  <Image
+    src={img.src}
+    width="1200"
+    height="750"
+    alt={img.alt}
+    class="object-cover object-center w-full h-72 max-w-full"
+  />
+  <!-- looks kinda... eh -->
+  <!-- <figcaption class="absolute bottom-8 left-8 p-2 bg-blue-gray-900/20 rounded-full backdrop-blur-sm shadow-2xl z-10">
+    <h2 class="text-sm uppercase">{img.title}</h2>
+  </figcaption> -->
+</figure>
+
 <!-- define the backdrop -->
 <div data-dialog-backdrop={img.title} data-dialog-backdrop-close="true"
-    class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
-    <!-- define the actual image field -->
-    <div 
-        class="flex flex-col max-w-[75%] max-h-[90vh] justify-center items-center"
-        role="dialog" data-dialog={img.title} data-dialog-close="true">
-        <!-- we use <img> here since we want the not .webp version -->
-        <img 
-            alt={img.alt}
-            src={img.src}
-            class="h-full object-scale-down object-center shadow-2xl"
-            />
+  class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
+  <!-- define the actual image field -->
+  <div 
+    class="flex flex-col max-w-[75%] max-h-[90vh] justify-center items-center"
+    role="dialog" data-dialog={img.title} data-dialog-close="true">
+    <!-- we use <img> here since we want the not .webp version -->
+    <img 
+      alt={img.alt}
+      src={img.src}
+      class="h-full object-scale-down object-center shadow-2xl"
+      />
+    <div class="flex flex-col">
+      <h2 class="uppercase text-xl">{img.title}</h2>
+      <p class="text-sm">by {img.artist}</p>
     </div>
+  </div>
 </div>
