@@ -1,7 +1,7 @@
 ---
 // import { glob } from 'glob'
 import BaseImage from './BaseImage.astro';
-import imageData from './images.json'
+import imageData from './json/images.json'
 
 // async function ImageFetcher(pattern: string) {
 //   const files = glob.sync(pattern, { posix: true })
@@ -26,14 +26,13 @@ if (nsfw) {
 }
 
 ---
-<div id="main">
+<div  class="grid grid-cols-3 content-evenly pb-14">
   { 
     filteredImages.map((img) => (
       <BaseImage img={img} />
     ))
   }
 </div>
-
 
 <!-- <div id="main">
   {

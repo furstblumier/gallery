@@ -1,6 +1,8 @@
 ---
+import "@fontsource-variable/montserrat";
+import "../styles/base.css";
+
 import BaseHead from './BaseHead.astro'
-import Header from './Header.astro'
 import Footer from './Footer.astro'
 import Gallery from './Gallery.astro'
 import ExternalScripts from './ExternalScripts.astro'
@@ -21,11 +23,10 @@ const {nsfw} = Astro.props
     og={'og-image.jpg'}
   />
 
-  <body class="is-preload">
-    <Header title={title} />
-    <Footer title={title} description={description} />
+  <body class="bg-[#242629] text-dark-gray-200 font-normal">
     <Gallery nsfw={nsfw}/>
-    <ExternalScripts />
     <NsfwLink />
+    <Footer title={title} description={description} />
+    <ExternalScripts/>
   </body>
 </html>
