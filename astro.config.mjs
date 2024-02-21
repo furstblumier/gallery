@@ -7,6 +7,9 @@ import icon from "astro-icon";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://furst.blue',
+  prefetch: {
+    defaultStrategy: 'load'
+  },
   image: {
     remotePatterns: [{
       protocol: "https"

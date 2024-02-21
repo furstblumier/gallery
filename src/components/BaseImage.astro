@@ -5,9 +5,12 @@ import artists from './json/artists.json'
 const { img } = Astro.props
 ---
 
-{//This part styles the thumbnail images
+{
+  //This part styles the thumbnail images
 }
-<figure class="object-contain h-72 relative transition-opacity ease-in cursor-pointer hover:-translate-y-1 hover:-translate-x-1 hover:shadow-2xl hover:scale-110 duration-300 hover:z-10" data-dialog-target={img.title}>
+<figure 
+  class="object-contain h-72 relative transition-opacity ease-in cursor-pointer hover:-translate-y-1 hover:-translate-x-1 hover:shadow-2xl hover:scale-110 duration-300 hover:z-10" 
+  data-dialog-target={img.title}>
   <Image
     src={img.src}
     width="1200"
@@ -20,13 +23,19 @@ const { img } = Astro.props
 {
 // define the backdrop
 }
-<div data-dialog-backdrop={img.title} data-dialog-backdrop-close="true"
+<div 
+  data-dialog-backdrop={img.title} 
+  data-dialog-backdrop-close="true"
   class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300">
-  <!-- define the actual image field -->
+  {
+    // define the actual image field
+  }
   <div 
     class="flex flex-col max-w-[75%] max-h-[90vh] justify-center items-center"
     role="dialog" data-dialog={img.title} data-dialog-close="true">
-    <!-- we use <img> here since we want the not .webp version -->
+    {
+      // we use <img> here since we want the not .webp version
+    }
     <img 
       alt={img.alt}
       src={img.src}

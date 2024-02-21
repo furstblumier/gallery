@@ -1,21 +1,7 @@
 ---
-// import { glob } from 'glob'
 import BaseImage from './BaseImage.astro';
 import imageData from './json/images.json'
 
-// async function ImageFetcher(pattern: string) {
-//   const files = glob.sync(pattern, { posix: true })
-//   const imagePromises = files.map(async (file) => {
-//     const src = file.replace('public', '')
-//     return { src }
-//   })
-
-//   const imageFiles = await Promise.all(imagePromises)
-
-//   imageFiles.sort((a, b) => a.src.localeCompare(b.src))
-
-//   return imageFiles
-// }
 const { nsfw } = Astro.props
 
 let filteredImages
@@ -26,6 +12,7 @@ if (nsfw) {
 }
 
 ---
+
 <div  class="grid grid-cols-1 md:grid-cols-3 content-evenly pb-14">
   { 
     filteredImages.map((img) => (
@@ -33,22 +20,3 @@ if (nsfw) {
     ))
   }
 </div>
-
-<!-- <div id="main">
-  {
-    imageFiles.map((img) => (
-      <article class="thumb">
-        <a class="image" href={img.src}>
-          <Image
-            src={img.src}
-            width="1200"
-            height="750"
-            alt="Astro Multiverse"
-          />
-        </a>
-        <h2>{title}</h2>
-        <p>{description}</p>
-      </article>
-    ))
-  }
-</div> -->
