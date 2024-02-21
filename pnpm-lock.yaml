@@ -14,6 +14,9 @@ dependencies:
   '@fontsource-variable/montserrat':
     specifier: ^5.0.17
     version: 5.0.17
+  '@iconify-json/cib':
+    specifier: ^1.1.8
+    version: 1.1.8
   '@iconify-json/ei':
     specifier: ^1.1.8
     version: 1.1.8
@@ -685,6 +688,12 @@ packages:
 
   /@fontsource-variable/montserrat@5.0.17:
     resolution: {integrity: sha512-kRPFY+sLUPE4fGTkuHu6phebYTwizsbGVIvqYa2vysRLPKUxwoiy1lb9Z4Qul8qoVspXnl0b9zA5LSn0scD9vA==}
+    dev: false
+
+  /@iconify-json/cib@1.1.8:
+    resolution: {integrity: sha512-wL7uxAq8pC9la11dRSHUrz4g4cNLhoR8VC/rnmTcswER/vICNgUYt7vNs0VVaGjC6G1dTY+iyKS4ooRCXChsqw==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: false
 
   /@iconify-json/ei@1.1.8:
