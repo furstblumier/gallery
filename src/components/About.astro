@@ -12,13 +12,13 @@ const { title, description } = Astro.props
     <div class="flex m-auto max-w-full w-[75rem]">
       <!-- split in two, left section -->
       <div class="w-1/2">
-        <section class="block">
+        <section>
           <h2 class="text-xl mb-4 uppercase">{title}</h2>
           <p class="text-sm text-dark-gray-500 mb-8">{description}</p>
         </section>
         <section>
           <h2 class="text-xl uppercase pb-4">Follow me on ...</h2>
-          <ul class="flex justify-evenly mb-8 text-dark-gray-500">
+          <ul class="flex gap-4 mb-8 text-dark-gray-500">
             <li>
               <a href="https://twitter.com/furstblumier" class="">
                 <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="mdi:twitter" />
@@ -44,18 +44,15 @@ const { title, description } = Astro.props
                 <Icon class="size-8 ease-in-out hover:text-dark-gray-200 hover:scale-110" name="mdi:github" />
               </a>
             </li>
-            <!-- empty list to space a bit better -->
-            <li></li>
-            <li></li>
           </ul>
         </section>
         <p class="text-dark-gray-500 text-xs">
-          &copy; Fürst. Made with Astro and Tailwind.<br />
-            Images: Made by their respective artists. Check my socials for links!
+          &copy; Fürst. Made with <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://tailwindcss.com" target="_blank">Tailwind</a>.<br />
+          Images: Made by their respective artists. Click on their names! :3
         </p>
       </div>
       <!-- split in two, right section -->
-      <div class="block">
+      <div class="w-1/2 ml-8">
         <section>
           <h2 class="uppercase text-xl mb-4">About me</h2>
           <p class="text-dark-gray-500 text-sm mb-8">
@@ -65,7 +62,7 @@ const { title, description } = Astro.props
             At my day job I work in IT (like 90% of the fandom) as a systems engineer, currently specializing in Kubernetes clusters. I'm not a dev, but I made this website myself for example.
           </p>
           <p class="text-dark-gray-500 text-sm mb-8">
-            If you wanna get in touch, shoot me a message on Discord (furstblumier) or <a href="https://t.me/furstblumier" target="_blank">Telegram</a>! :3 
+            If you wanna get in touch, shoot me a message on Discord (furstblumier) or <a class="underline ease-in-out hover:text-dark-gray-200" href="https://t.me/furstblumier" target="_blank">Telegram</a>! :3 
           </p>
         </section>
       </div>

@@ -17,7 +17,7 @@
   "dependencies": {
     "@astrojs/react": "^3.0.10",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource-variable/inter": "^5.0.16",
+    "@fontsource-variable/montserrat": "^5.0.17",
     "@iconify-json/ei": "^1.1.8",
     "@iconify-json/mdi": "^1.1.64",
     "@material-tailwind/html": "^2.2.2",

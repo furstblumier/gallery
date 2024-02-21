@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import artists from './json/artists.json'
 
 const { img } = Astro.props
 ---
@@ -34,7 +35,15 @@ const { img } = Astro.props
       />
     <div class="flex flex-col">
       <h2 class="uppercase text-xl">{img.title}</h2>
-      <p class="text-sm">by {img.artist}</p>
+      <p class="text-sm text text-dark-gray-500">
+        {
+          (img.artist in artists) ? (
+            <a class="" href={artists[img.artist]}>by {img.artist}</a>
+          ) : ( 
+            "by " + img.artist
+          )
+        }
+      </p>
     </div>
   </div>
 </div>
