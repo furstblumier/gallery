@@ -4,4 +4,4 @@ Disallow: /nsfw
 User-agent: *
 Allow: /
 
-Sitemap: https://astro-multiverse.netlify.app/sitemap-index.xml
+Sitemap: https://gallery.furst.blue/sitemap-index.xml
