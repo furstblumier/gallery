@@ -10,7 +10,7 @@ export default defineConfig({
   site: 'https://gallery.furst.blue',
   prefetch: {
     prefetchAll: true,
-    defaultStrategy: 'load',
+    defaultStrategy: 'viewport',
   },
   image: {
     remotePatterns: [{
