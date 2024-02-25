@@ -9,7 +9,8 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://gallery.furst.blue',
   prefetch: {
-    defaultStrategy: 'load'
+    prefetchAll: true,
+    defaultStrategy: 'load',
   },
   image: {
     remotePatterns: [{
