@@ -46,7 +46,7 @@ const { img } = Astro.props
       <p class="text-sm text text-dark-gray-500">
         {
           (img.artist in artists) ? (
-            <a class="underline hover:text-dark-gray-200" href={artists[img.artist]}>by {img.artist}</a>
+            <a class="underline hover:text-dark-gray-200" href={artists[img.artist]} target="_blank">by {img.artist}</a>
           ) : ( 
             "by " + img.artist
           )
