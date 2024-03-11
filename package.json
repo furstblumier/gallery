@@ -26,7 +26,7 @@
     "@material-tailwind/html": "^2.2.2",
     "@material-tailwind/react": "^2.1.9",
     "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
+    "@types/react-dom": "^18.2.21",
     "astro": "^4.3.5",
     "astro-icon": "^1.1.0",
     "react": "^18.2.0",
