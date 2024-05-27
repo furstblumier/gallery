@@ -13,7 +13,7 @@ dependencies:
     version: 3.1.4
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.0(astro@4.8.6)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.9.1)(tailwindcss@3.4.3)
   '@fontsource-variable/montserrat':
     specifier: ^5.0.19
     version: 5.0.19
@@ -42,8 +42,8 @@ dependencies:
     specifier: ^18.3.0
     version: 18.3.0
   astro:
-    specifier: ^4.8.6
-    version: 4.8.6
+    specifier: ^4.9.1
+    version: 4.9.1
   astro-icon:
     specifier: ^1.1.0
     version: 1.1.0
@@ -154,13 +154,13 @@ packages:
       zod: 3.22.4
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.8.6)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.9.1)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.8.6
+      astro: 4.9.1
       autoprefixer: 10.4.17(postcss@8.4.35)
       postcss: 8.4.35
       postcss-load-config: 4.0.2(postcss@8.4.35)
@@ -1679,8 +1679,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.8.6:
-    resolution: {integrity: sha512-psHIfK+e+bMPhRwghV9yCGH/uc1jvY4DHmDZdoEepax9yA7kzYH0wt3dpkqlcrO2zxl5jzSC3DmqZfkD6wnW9A==}
+  /astro@4.9.1:
+    resolution: {integrity: sha512-9TsoAu0WBPiqyAIj9H0JW7R+tIjPjFsPKo70Nja6WL3imTTuUJQmnCre4ZVmoNV3oicTTlb+N4zjRYANW0Ty9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
