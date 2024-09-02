@@ -20,7 +20,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/montserrat": "^5.0.20",
     "@iconify-json/cib": "^1.1.10",
-    "@iconify-json/ei": "^1.1.9",
+    "@iconify-json/ei": "^1.2.0",
     "@iconify-json/mdi": "^1.1.68",
     "@iconify-json/uil": "^1.1.9",
     "@material-tailwind/html": "^2.2.5",
