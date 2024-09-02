@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.0.20
     version: 5.0.20
   '@iconify-json/cib':
-    specifier: ^1.1.10
-    version: 1.1.10
+    specifier: ^1.2.0
+    version: 1.2.0
   '@iconify-json/ei':
     specifier: ^1.2.0
     version: 1.2.0
@@ -699,8 +699,8 @@ packages:
     resolution: {integrity: sha512-/D+j5M68+GnSbi1A0K+0qnVpnu8O2rd5zsmE7COgD7EK/G9tNEE8emcg7+HkKsyViMmYuQ+t4o0FmB6pU/aBRQ==}
     dev: false
 
-  /@iconify-json/cib@1.1.10:
-    resolution: {integrity: sha512-AisBsRyUDWOMv2M++O7h/9TFyNCqMBHUcmR5ARkZHi7xJHfLQvZ5qaFuSW3cQ9UYc+LXS+nK1QXWsiopxj16ug==}
+  /@iconify-json/cib@1.2.0:
+    resolution: {integrity: sha512-gaZ8bY+5i2oEudAJBJmsKa5AqRb5Zu+S77/WL8VRlNNLaQ+0MlT6N8sdwCNFRwjxInDUXV9XH7jxd8e0bhSW1A==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
