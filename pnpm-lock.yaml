@@ -30,8 +30,8 @@ dependencies:
     specifier: ^1.1.9
     version: 1.1.9
   '@material-tailwind/html':
-    specifier: ^2.2.5
-    version: 2.2.5
+    specifier: ^2.3.0
+    version: 2.3.0
   '@material-tailwind/react':
     specifier: ^2.1.9
     version: 2.1.9(react-dom@18.3.1)(react@18.3.1)
@@ -965,8 +965,8 @@ packages:
       '@jridgewell/sourcemap-codec': 1.5.0
     dev: false
 
-  /@material-tailwind/html@2.2.5:
-    resolution: {integrity: sha512-reNTR9bzzxukf5W+NMHEO+cQul9lgobk41WBfV7vGgQDUGwFgbg/aZarprnmQAXFI+0BrMHLBmRA1AeTyjph7w==}
+  /@material-tailwind/html@2.3.0:
+    resolution: {integrity: sha512-dBH95rVRKnHEBGfk4ndwP66+N9/JzLBeYYWEhqVsK16oA/A3rDfVhTBttpRP2Rq7M2fsMVpd/Abg/VRuh7nNZQ==}
     dependencies:
       deepmerge: 4.3.1
       material-ripple-effects: 2.0.1
