@@ -23,7 +23,7 @@
     "@iconify-json/ei": "^1.2.0",
     "@iconify-json/mdi": "^1.1.68",
     "@iconify-json/uil": "^1.1.9",
-    "@material-tailwind/html": "^2.2.5",
+    "@material-tailwind/html": "^2.3.0",
     "@material-tailwind/react": "^2.1.9",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
