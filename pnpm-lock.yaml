@@ -15,8 +15,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.15.4)(tailwindcss@3.4.10)
   '@fontsource-variable/montserrat':
-    specifier: ^5.0.20
-    version: 5.0.20
+    specifier: ^5.0.21
+    version: 5.0.21
   '@iconify-json/cib':
     specifier: ^1.2.0
     version: 1.2.0
@@ -678,8 +678,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
-  /@fontsource-variable/montserrat@5.0.20:
-    resolution: {integrity: sha512-/D+j5M68+GnSbi1A0K+0qnVpnu8O2rd5zsmE7COgD7EK/G9tNEE8emcg7+HkKsyViMmYuQ+t4o0FmB6pU/aBRQ==}
+  /@fontsource-variable/montserrat@5.0.21:
+    resolution: {integrity: sha512-MY0mZf5J3X8/Z9jw2nRMcD7peDg5MInz1BvKceiDPiw6IKPJu/lvCD4KhUIvhYzpUP7sPRDm/fg3ojonHLs81g==}
     dev: false
 
   /@iconify-json/cib@1.2.0:
