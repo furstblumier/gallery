@@ -27,8 +27,8 @@ dependencies:
     specifier: ^1.2.0
     version: 1.2.0
   '@iconify-json/uil':
-    specifier: ^1.2.0
-    version: 1.2.0
+    specifier: ^1.2.1
+    version: 1.2.1
   '@material-tailwind/html':
     specifier: ^2.3.2
     version: 2.3.2
@@ -700,8 +700,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/uil@1.2.0:
-    resolution: {integrity: sha512-DFhJYbp/H2BGQ2oBS0DmqhvgkdUXpBTgCErhqwLEeRhkt8+MuTKlivpQf/gPgD5/6wHH37gPX4BhlqU4eH372w==}
+  /@iconify-json/uil@1.2.1:
+    resolution: {integrity: sha512-bQPtDp1nVaDL+ejECPENHJalspCQCZreCJ2LHWazm0pfoz34afKAQKMSb1mH8K/CPnibCQTM29AvXrHMpyjbtg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
