@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.6.2
     version: 3.6.2(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1)(react@18.3.1)(vite@5.4.9)
   '@astrojs/sitemap':
-    specifier: ^3.2.0
-    version: 3.2.0
+    specifier: ^3.2.1
+    version: 3.2.1
   '@astrojs/tailwind':
     specifier: ^5.1.2
     version: 5.1.2(astro@4.16.6)(tailwindcss@3.4.14)
@@ -146,8 +146,8 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/sitemap@3.2.0:
-    resolution: {integrity: sha512-SkrOCL3Z6HxdiXreZ1+aPBWgnBMJ31EgPdcscgQeLqI2Gqk/4EKLuw9q0SqKU9MmHpcPXXtcd0odfCk4barPoA==}
+  /@astrojs/sitemap@3.2.1:
+    resolution: {integrity: sha512-uxMfO8f7pALq0ADL6Lk68UV6dNYjJ2xGUzyjjVj60JLBs5a6smtlkBYv3tQ0DzoqwS7c9n4FUx5lgv0yPo/fgA==}
     dependencies:
       sitemap: 8.0.0
       stream-replace-string: 2.0.0
