@@ -15,7 +15,7 @@
     "start": "astro dev"
   },
   "dependencies": {
-    "@astrojs/react": "^3.6.2",
+    "@astrojs/react": "^3.6.3",
     "@astrojs/sitemap": "^3.2.1",
     "@astrojs/tailwind": "^5.1.2",
     "@fontsource-variable/montserrat": "^5.1.0",
