@@ -45,8 +45,8 @@ dependencies:
     specifier: ^4.16.10
     version: 4.16.10(typescript@5.6.3)
   astro-icon:
-    specifier: ^1.1.2
-    version: 1.1.2
+    specifier: ^1.1.4
+    version: 1.1.4
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -1650,8 +1650,8 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro-icon@1.1.2:
-    resolution: {integrity: sha512-2qAHBtZLYuFEIMP0Ck0edyLi5fQmJjwP2Qbv41f8L4KAJ2sra/dH7q5lCOn4q0DHVtS0w3tPG8UKQRits3UPcg==}
+  /astro-icon@1.1.4:
+    resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
     dependencies:
       '@iconify/tools': 4.0.5
       '@iconify/types': 2.0.0
