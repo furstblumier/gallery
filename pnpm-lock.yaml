@@ -21,8 +21,8 @@ dependencies:
     specifier: ^1.2.1
     version: 1.2.1
   '@iconify-json/ei':
-    specifier: ^1.2.1
-    version: 1.2.1
+    specifier: ^1.2.2
+    version: 1.2.2
   '@iconify-json/mdi':
     specifier: ^1.2.1
     version: 1.2.1
@@ -863,8 +863,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/ei@1.2.1:
-    resolution: {integrity: sha512-ZU0E5WT/6er1KbnKgsizluzlxyD+mamzfbiy3OyZgRELrqlNtcU4vPjqcrKC5oZQgV1fPf6keoQJ8xO3B2N4fA==}
+  /@iconify-json/ei@1.2.2:
+    resolution: {integrity: sha512-Ev9rmhPZh7Mci4szCNHq4Ewx1H1uNQrjk0bK+ZmzzMZ9IPVIqnpaIdL578XgBKT3UivTj6fLF2mDkatwqTMMgA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
