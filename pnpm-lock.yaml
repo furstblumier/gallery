@@ -13,10 +13,10 @@ dependencies:
     version: 3.2.1
   '@astrojs/tailwind':
     specifier: ^5.1.4
-    version: 5.1.4(astro@5.1.1)(tailwindcss@3.4.17)
+    version: 5.1.4(astro@5.1.2)(tailwindcss@3.4.17)
   '@fontsource-variable/montserrat':
-    specifier: ^5.1.0
-    version: 5.1.0
+    specifier: ^5.1.1
+    version: 5.1.1
   '@iconify-json/cib':
     specifier: ^1.2.2
     version: 1.2.2
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.2.2
     version: 1.2.2
   '@iconify-json/mdi':
-    specifier: ^1.2.1
-    version: 1.2.1
+    specifier: ^1.2.2
+    version: 1.2.2
   '@iconify-json/uil':
     specifier: ^1.2.3
     version: 1.2.3
@@ -42,11 +42,11 @@ dependencies:
     specifier: ^18.3.1
     version: 18.3.1
   astro:
-    specifier: ^5.1.1
-    version: 5.1.1(typescript@5.7.2)
+    specifier: ^5.1.2
+    version: 5.1.2(typescript@5.7.2)
   astro-icon:
-    specifier: ^1.1.4
-    version: 1.1.4
+    specifier: ^1.1.5
+    version: 1.1.5
   react:
     specifier: ^18.3.1
     version: 18.3.1
@@ -166,13 +166,13 @@ packages:
       zod: 3.23.8
     dev: false
 
-  /@astrojs/tailwind@5.1.4(astro@5.1.1)(tailwindcss@3.4.17):
+  /@astrojs/tailwind@5.1.4(astro@5.1.2)(tailwindcss@3.4.17):
     resolution: {integrity: sha512-EJ3uoTZZr0RYwTrVS2HgYN0+VbXvg7h87AtwpD5OzqS3GyMwRmzfOwHfORTxoWGQRrY9k/Fi+Awk60kwpvRL5Q==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 5.1.1(typescript@5.7.2)
+      astro: 5.1.2(typescript@5.7.2)
       autoprefixer: 10.4.20(postcss@8.4.49)
       postcss: 8.4.49
       postcss-load-config: 4.0.2(postcss@8.4.49)
@@ -853,8 +853,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
-  /@fontsource-variable/montserrat@5.1.0:
-    resolution: {integrity: sha512-1bloVBKJx/ABBmF+/VzhJZDLzaDNUxw/8Pt5AOgfKL6N3t1fAhwtJBb1gdqU7ABckSNLsKf572A5Inv9YneRug==}
+  /@fontsource-variable/montserrat@5.1.1:
+    resolution: {integrity: sha512-eHmSruS3B+4wVaHk6ShNUJj1MbWEohOuriwN/oYR2VY8jRS83a5SKQeG1wu4Eku3v3f5cXTIbfd1tHeQ7GXkiA==}
     dev: false
 
   /@iconify-json/cib@1.2.2:
@@ -869,8 +869,8 @@ packages:
       '@iconify/types': 2.0.0
     dev: false
 
-  /@iconify-json/mdi@1.2.1:
-    resolution: {integrity: sha512-dSkQU78gsZV6Yxnq78+LuX7jzeFC/5NAmz7O3rh558GimGFcwMVY/OtqRowIzjqJBmMmWZft7wkFV4TrwRXjlg==}
+  /@iconify-json/mdi@1.2.2:
+    resolution: {integrity: sha512-84aznJXzfGdbOXGe8xB7E5uNAb7Yo5IABwTgq2X3kczb819qZeS9eL31bTVn7wJdCLK5ieaoUc2GTS3QYIkJ6g==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: false
@@ -1793,8 +1793,8 @@ packages:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
     dev: false
 
-  /astro-icon@1.1.4:
-    resolution: {integrity: sha512-sMLkQaevIQLv38WBzb/RDbsmxhg5+X+KcNmpTi9cE6MLurNWU1MPnlO87d9Vwg4HxTenKpDlYp81A3syXFW/gw==}
+  /astro-icon@1.1.5:
+    resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
     dependencies:
       '@iconify/tools': 4.0.5
       '@iconify/types': 2.0.0
@@ -1804,8 +1804,8 @@ packages:
       - supports-color
     dev: false
 
-  /astro@5.1.1(typescript@5.7.2):
-    resolution: {integrity: sha512-prpWC2PRs4P3FKQg6gZaU+VNMqbZi5pDvORGB2nrjfRjkrvF6/l4BqhvkJ6YQ0Ohm5rIMVz8ljgaRI77mLHbwg==}
+  /astro@5.1.2(typescript@5.7.2):
+    resolution: {integrity: sha512-+U5lXPEJZ6cQx0botGbPhzN6XGWRgDtXgy/RUkpTmUj18LW6pbzYo0O0k3hFWOazlI039bZ+4P2e/oSNlKzm0Q==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
