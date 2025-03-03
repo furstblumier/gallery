@@ -15,8 +15,8 @@ dependencies:
     specifier: ^6.0.0
     version: 6.0.0(astro@5.3.0)(tailwindcss@3.4.17)
   '@fontsource-variable/montserrat':
-    specifier: ^5.1.1
-    version: 5.1.1
+    specifier: ^5.2.5
+    version: 5.2.5
   '@iconify-json/cib':
     specifier: ^1.2.2
     version: 1.2.2
@@ -43,7 +43,7 @@ dependencies:
     version: 18.3.1
   astro:
     specifier: ^5.3.0
-    version: 5.3.0(typescript@5.7.3)
+    version: 5.3.0(typescript@5.8.2)
   astro-icon:
     specifier: ^1.1.5
     version: 1.1.5
@@ -173,7 +173,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0 || ^5.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 5.3.0(typescript@5.7.3)
+      astro: 5.3.0(typescript@5.8.2)
       autoprefixer: 10.4.20(postcss@8.5.1)
       postcss: 8.5.1
       postcss-load-config: 4.0.2(postcss@8.5.1)
@@ -672,8 +672,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: false
 
-  /@fontsource-variable/montserrat@5.1.1:
-    resolution: {integrity: sha512-eHmSruS3B+4wVaHk6ShNUJj1MbWEohOuriwN/oYR2VY8jRS83a5SKQeG1wu4Eku3v3f5cXTIbfd1tHeQ7GXkiA==}
+  /@fontsource-variable/montserrat@5.2.5:
+    resolution: {integrity: sha512-Mfg/AiXwhPLAAgLCqzugFUs/PLprbHzXMhPVrf35q5od4/wHjVqtm0bI000tKGUGDZ3gDpId/+cqufcYHAAAEQ==}
     dev: false
 
   /@iconify-json/cib@1.2.2:
@@ -1658,7 +1658,7 @@ packages:
       - supports-color
     dev: false
 
-  /astro@5.3.0(typescript@5.7.3):
+  /astro@5.3.0(typescript@5.8.2):
     resolution: {integrity: sha512-e88l/Yk/6enR/ZDddLbqtM+oblBFk5mneNSmNesyVYGL/6Dj4UA67GPAZOk79VxT5dbLlclZSyyw/wlxN1aj3A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
@@ -1708,7 +1708,7 @@ packages:
       semver: 7.7.1
       shiki: 1.29.2
       tinyexec: 0.3.2
-      tsconfck: 3.1.5(typescript@5.7.3)
+      tsconfck: 3.1.5(typescript@5.8.2)
       ultrahtml: 1.5.3
       unist-util-visit: 5.0.0
       unstorage: 1.14.4
@@ -1721,7 +1721,7 @@ packages:
       yocto-spinner: 0.2.0
       zod: 3.24.2
       zod-to-json-schema: 3.24.1(zod@3.24.2)
-      zod-to-ts: 1.2.0(typescript@5.7.3)(zod@3.24.2)
+      zod-to-ts: 1.2.0(typescript@5.8.2)(zod@3.24.2)
     optionalDependencies:
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -4457,7 +4457,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: false
 
-  /tsconfck@3.1.5(typescript@5.7.3):
+  /tsconfck@3.1.5(typescript@5.8.2):
     resolution: {integrity: sha512-CLDfGgUp7XPswWnezWwsCRxNmgQjhYq3VXHM0/XIRxhVrKw0M1if9agzryh1QS3nxjCROvV+xWxoJO1YctzzWg==}
     engines: {node: ^18 || >=20}
     hasBin: true
@@ -4467,7 +4467,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
     dev: false
 
   /tslib@2.6.2:
@@ -4485,8 +4485,8 @@ packages:
     engines: {node: '>=16'}
     dev: false
 
-  /typescript@5.7.3:
-    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
+  /typescript@5.8.2:
+    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: false
@@ -4929,13 +4929,13 @@ packages:
       zod: 3.24.2
     dev: false
 
-  /zod-to-ts@1.2.0(typescript@5.7.3)(zod@3.24.2):
+  /zod-to-ts@1.2.0(typescript@5.8.2)(zod@3.24.2):
     resolution: {integrity: sha512-x30XE43V+InwGpvTySRNz9kB7qFU8DlyEy7BsSTCHPH1R0QasMmHWZDCzYm6bVXtj/9NNJAZF3jW8rzFvH5OFA==}
     peerDependencies:
       typescript: ^4.9.4 || ^5.0.2
       zod: ^3
     dependencies:
-      typescript: 5.7.3
+      typescript: 5.8.2
       zod: 3.24.2
     dev: false
 
