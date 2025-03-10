@@ -916,7 +916,7 @@ packages:
       '@iconify/types': 2.0.0
       '@iconify/utils': 2.1.30
       '@types/tar': 6.1.13
-      axios: 1.7.4
+      axios: 1.8.2
       cheerio: 1.0.0
       domhandler: 5.0.3
       extract-zip: 2.0.1
@@ -1989,8 +1989,8 @@ packages:
       postcss-value-parser: 4.2.0
     dev: false
 
-  /axios@1.7.4:
-    resolution: {integrity: sha512-DukmaFRnY6AzAALSH4J2M3k6PkaC+MfaAGdEERRWcC9q3/TWQwLpHR8ZRLKTdQ3aBDL64EdluRDjJqKw+BPZEw==}
+  /axios@1.8.2:
+    resolution: {integrity: sha512-ls4GYBm5aig9vWx8AWDSGLpnpDQRtWAfrjU+EuytuODrFBkqesN2RkOQCBzrA1RQNHw1SmRMSDDDSwzNAYQ6Rg==}
     dependencies:
       follow-redirects: 1.15.6
       form-data: 4.0.0
