@@ -384,6 +384,13 @@
       "artist": "Eraquis",
       "alt": "Koi and Tuna oral",
       "sfw": false
+    },
+    {
+      "src": "https://itaku.ee/api/media/gallery_imgs/FromDreeda_-_Dree_da_6PWCmj5.png",
+      "title": "Koi Secret Santa",
+      "artist": "Dreeda",
+      "alt": "Tuna secret Santa",
+      "sfw": true
     }
   ]
 }
