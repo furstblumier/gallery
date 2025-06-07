@@ -16,7 +16,7 @@ importers:
         version: 3.4.1
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.9.0(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
+        version: 6.0.2(astro@5.9.1(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)
       '@fontsource-variable/montserrat':
         specifier: ^5.2.5
         version: 5.2.5
@@ -46,7 +46,7 @@ importers:
         version: 19.1.6(@types/react@19.1.6)
       astro:
         specifier: ^5.7.4
-        version: 5.9.0(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0)
+        version: 5.9.1(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0)
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
@@ -79,8 +79,8 @@ packages:
   '@antfu/utils@8.1.1':
     resolution: {integrity: sha512-Mex9nXf9vR6AhcXmMrlz/HVgYYZpVGJ6YlPgwl7UnaFpnshXs6EK/oa5Gpf3CzENMjkvEx2tQtntGnb7UtSTOQ==}
 
-  '@astrojs/compiler@2.12.0':
-    resolution: {integrity: sha512-7bCjW6tVDpUurQLeKBUN9tZ5kSv5qYrGmcn0sG0IwacL7isR2ZbyyA3AdZ4uxsuUFOS2SlgReTH7wkxO6zpqWA==}
+  '@astrojs/compiler@2.12.1':
+    resolution: {integrity: sha512-WDSyVIiz7sNcJcCJxJFITu6XjfGhJ50Z0auyaWsrM+xb07IlhBLFtQuDkNy0caVHWNcKTM2LISAaHhgkRqGAVg==}
 
   '@astrojs/internal-helpers@0.6.1':
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
@@ -954,8 +954,8 @@ packages:
   astro-icon@1.1.5:
     resolution: {integrity: sha512-CJYS5nWOw9jz4RpGWmzNQY7D0y2ZZacH7atL2K9DeJXJVaz7/5WrxeyIxO8KASk1jCM96Q4LjRx/F3R+InjJrw==}
 
-  astro@5.9.0:
-    resolution: {integrity: sha512-AHF7oZDBQRwggHUG0bwBhRQjrDD+vJpCtPd0/GVxDB1hGRV0SQuFWS0UHX5bYczIqFcao1z9o9o0r2rQtHrTMg==}
+  astro@5.9.1:
+    resolution: {integrity: sha512-wxoJcTbuDZNFSv6EaL0PAlrp0Wx6VnOAULCXvy0scsV70oWMeUkdxuBxfO54JxO5Qgyvwj9h99y6E0elqOpGtA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2642,7 +2642,7 @@ snapshots:
 
   '@antfu/utils@8.1.1': {}
 
-  '@astrojs/compiler@2.12.0': {}
+  '@astrojs/compiler@2.12.1': {}
 
   '@astrojs/internal-helpers@0.6.1': {}
 
@@ -2705,9 +2705,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.51
 
-  '@astrojs/tailwind@6.0.2(astro@5.9.0(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
+  '@astrojs/tailwind@6.0.2(astro@5.9.1(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0))(tailwindcss@3.4.17)':
     dependencies:
-      astro: 5.9.0(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0)
+      astro: 5.9.1(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0)
       autoprefixer: 10.4.21(postcss@8.5.3)
       postcss: 8.5.3
       postcss-load-config: 4.0.2(postcss@8.5.3)
@@ -3507,9 +3507,9 @@ snapshots:
       - debug
       - supports-color
 
-  astro@5.9.0(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0):
+  astro@5.9.1(@types/node@22.15.30)(jiti@1.21.7)(rollup@4.42.0)(typescript@5.8.3)(yaml@2.8.0):
     dependencies:
-      '@astrojs/compiler': 2.12.0
+      '@astrojs/compiler': 2.12.1
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/markdown-remark': 6.3.2
       '@astrojs/telemetry': 3.3.0
