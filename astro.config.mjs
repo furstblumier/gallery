@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
 import react from "@astrojs/react";
 import sitemap from '@astrojs/sitemap';
+import tailwindcss from "@tailwindcss/vite";
 
 import icon from "astro-icon";
 
@@ -17,5 +17,8 @@ export default defineConfig({
       protocol: "https"
     }]
   },
-  integrations: [tailwind(), react(), icon(), sitemap()]
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [react(), icon(), sitemap()]
 });
